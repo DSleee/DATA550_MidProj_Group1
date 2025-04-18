@@ -20,4 +20,4 @@ output/sdp_figure2.png: code/04_sdp_make_figure2.R
 
 .PHONY: install
 install:
-Rscript -e "renv::restore(prompt = FALSE)"
+	Rscript -e "renv::restore(prompt = FALSE)"
