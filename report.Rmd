@@ -23,30 +23,26 @@ figure1 <- here::here("output/sdp_figure1.png")
 figure2 <- here::here("output/sdp_figure2.png")
 ```
 
-
-# Table 1. 
-```{r, include=params$table_run}
+ 
+```{r, include=params$table_run,echo=FALSE}
 readRDS(
   file = (table1)
 )
 ```
 
-# Table 2.
-```{r, include=params$table_run}
+```{r, include=params$table_run,echo=FALSE}
 readRDS(
   file = (table2)
 )
 ```
 
-# Figure 1.
-```{r, include=params$figure_run}
+```{r, include=params$figure_run,echo=FALSE}
 #| fig.align = "center",
 #| out.width = "600px"
 knitr::include_graphics(figure1)
 ```
 
-# Figure 2.
-```{r, include=params$figure_run}
+```{r, include=params$figure_run,echo=FALSE}
 #| fig.align = "center",
 #| out.width = "600px"
 knitr::include_graphics(figure2)
