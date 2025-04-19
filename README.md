@@ -51,9 +51,8 @@ The generated report will be saved in the `project` folder.
 > You can choose whether to include tables or figures in the report:
 >
 > ```bash
-make report.html table=TRUE figure=FALSE
+> make report.html table=TRUE figure=FALSE
 > ```
->
 > - `table=TRUE` or `FALSE` &nbsp;&nbsp;&nbsp;→ include/exclude tables  
 > - `figure=TRUE` or `FALSE` → include/exclude figures
 > These options are passed to the rendering script and control output contents.
