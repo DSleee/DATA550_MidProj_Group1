@@ -22,7 +22,41 @@ The base dataset is from a [**randomized trial**](https://pubmed.ncbi.nlm.nih.go
 ## Quick Guide
 🚨**IMPORTANT:** If you want to change the dataset for analysis, please upload the new file to the data folder with the name `f75_interim.csv`, as the input filename has been fixed.
 
-Just run `make report.html table=TRUE figure=TRUE` in the terminal!
+## 🧪 Report Generation without Docker
+
+This method runs the project directly in your local R environment using `renv`.
+
+### ✅ 1. Install required packages
+
+```bash
+make install
+```
+
+This will restore all necessary R packages based on `renv.lock`.
+
+---
+
+### 📝 2. Generate the report
+** It is a default (table=TRUE figure=TRUE)
+```bash
+make
+```
+
+The generated report will be saved in the `project` folder.
+
+---
+
+> 💡 **Optional: Customize content**
+>
+> You can choose whether to include tables or figures in the report:
+>
+> ```bash
+make report.html table=TRUE figure=FALSE
+> ```
+>
+> - `table=TRUE` or `FALSE` &nbsp;&nbsp;&nbsp;→ include/exclude tables  
+> - `figure=TRUE` or `FALSE` → include/exclude figures
+> These options are passed to the rendering script and control output contents.
 
 
 ## Usage
@@ -61,6 +95,6 @@ The original data from [**this study**](https://pubmed.ncbi.nlm.nih.gov/30807589
 
 ### *Output* 
 
-Once the codes for generating the tables and figures are run, the outputs will appear in the "Output" subdirectory.
+Once the codes for generating the tables and figures are run, the outputs will appear in the "output" subdirectory.
 
 The final report file will appear in the project dictory.
